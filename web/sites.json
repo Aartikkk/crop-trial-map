@@ -1,0 +1,312 @@
+{
+  "generated_at": "2026-09-28T16:29:15+00:00",
+  "source_file": "data/sites.xlsx",
+  "countries_with_sites": [
+    "United States"
+  ],
+  "sites": [
+    {
+      "site_id": "US-TX-01",
+      "name": "Lubbock site 1",
+      "status": "Tested",
+      "country": "United States",
+      "country_geojson_name": "United States of America",
+      "state": "TX",
+      "county": "Lubbock",
+      "city": "Lubbock",
+      "lat": 33.5779,
+      "lon": -101.8552,
+      "has_coords": true,
+      "coord_source": "City center",
+      "is_exact": false,
+      "crops": [
+        "Cotton"
+      ],
+      "soil_type": "Sandy loam",
+      "treatments": [
+        "E-Grow"
+      ],
+      "trial_year": 2026,
+      "contact": null,
+      "notes": "Laza table lists Lubbock twice; confirm site names"
+    },
+    {
+      "site_id": "US-TX-02",
+      "name": "Lubbock site 2",
+      "status": "Tested",
+      "country": "United States",
+      "country_geojson_name": "United States of America",
+      "state": "TX",
+      "county": "Lubbock",
+      "city": "Lubbock",
+      "lat": 33.5779,
+      "lon": -101.8552,
+      "has_coords": true,
+      "coord_source": "City center",
+      "is_exact": false,
+      "crops": [
+        "Cotton"
+      ],
+      "soil_type": "Sandy loam",
+      "treatments": [
+        "E-Grow"
+      ],
+      "trial_year": 2026,
+      "contact": null,
+      "notes": "Same coordinates as site 1 until field GPS is in"
+    },
+    {
+      "site_id": "US-TX-03",
+      "name": "Martin County",
+      "status": "Tested",
+      "country": "United States",
+      "country_geojson_name": "United States of America",
+      "state": "TX",
+      "county": "Martin",
+      "city": null,
+      "lat": 32.1293,
+      "lon": -101.7885,
+      "has_coords": true,
+      "coord_source": "County seat",
+      "is_exact": false,
+      "crops": [
+        "Cotton"
+      ],
+      "soil_type": "Sandy loam",
+      "treatments": [
+        "E-Grow"
+      ],
+      "trial_year": 2026,
+      "contact": null,
+      "notes": "Placed at Stanton (county seat) until field GPS is in"
+    },
+    {
+      "site_id": "US-FL-01",
+      "name": "Tallahassee",
+      "status": "Tested",
+      "country": "United States",
+      "country_geojson_name": "United States of America",
+      "state": "FL",
+      "county": null,
+      "city": "Tallahassee",
+      "lat": 30.4383,
+      "lon": -84.2807,
+      "has_coords": true,
+      "coord_source": "City center",
+      "is_exact": false,
+      "crops": [
+        "Maize"
+      ],
+      "soil_type": "Clay",
+      "treatments": [
+        "UAN32"
+      ],
+      "trial_year": 2026,
+      "contact": null,
+      "notes": null
+    },
+    {
+      "site_id": "US-KS-01",
+      "name": "Garden City",
+      "status": "Tested",
+      "country": "United States",
+      "country_geojson_name": "United States of America",
+      "state": "KS",
+      "county": "Finney",
+      "city": "Garden City",
+      "lat": 37.9717,
+      "lon": -100.8727,
+      "has_coords": true,
+      "coord_source": "City center",
+      "is_exact": false,
+      "crops": [
+        "Sorghum"
+      ],
+      "soil_type": "Silt loam",
+      "treatments": [
+        "Urea"
+      ],
+      "trial_year": 2026,
+      "contact": null,
+      "notes": null
+    },
+    {
+      "site_id": "US-IL-01",
+      "name": "Urbana",
+      "status": "Future",
+      "country": "United States",
+      "country_geojson_name": "United States of America",
+      "state": "IL",
+      "county": "Champaign",
+      "city": "Urbana",
+      "lat": 40.1106,
+      "lon": -88.2073,
+      "has_coords": true,
+      "coord_source": "City center",
+      "is_exact": false,
+      "crops": [
+        "Grass"
+      ],
+      "soil_type": null,
+      "treatments": [
+        "Blend rates"
+      ],
+      "trial_year": null,
+      "contact": null,
+      "notes": null
+    },
+    {
+      "site_id": "US-IL-02",
+      "name": "Peoria",
+      "status": "Future",
+      "country": "United States",
+      "country_geojson_name": "United States of America",
+      "state": "IL",
+      "county": "Peoria",
+      "city": "Peoria",
+      "lat": 40.6936,
+      "lon": -89.589,
+      "has_coords": true,
+      "coord_source": "City center",
+      "is_exact": false,
+      "crops": [
+        "Grass"
+      ],
+      "soil_type": null,
+      "treatments": [
+        "Blend rates"
+      ],
+      "trial_year": null,
+      "contact": null,
+      "notes": null
+    },
+    {
+      "site_id": "US-CA-01",
+      "name": "Fresno",
+      "status": "Future",
+      "country": "United States",
+      "country_geojson_name": "United States of America",
+      "state": "CA",
+      "county": "Fresno",
+      "city": "Fresno",
+      "lat": 36.7378,
+      "lon": -119.7871,
+      "has_coords": true,
+      "coord_source": "City center",
+      "is_exact": false,
+      "crops": [
+        "Roses"
+      ],
+      "soil_type": null,
+      "treatments": [
+        "Amendments"
+      ],
+      "trial_year": null,
+      "contact": null,
+      "notes": null
+    },
+    {
+      "site_id": "US-NC-01",
+      "name": "Raleigh",
+      "status": "Future",
+      "country": "United States",
+      "country_geojson_name": "United States of America",
+      "state": "NC",
+      "county": "Wake",
+      "city": "Raleigh",
+      "lat": 35.7796,
+      "lon": -78.6382,
+      "has_coords": true,
+      "coord_source": "City center",
+      "is_exact": false,
+      "crops": [
+        "Basil"
+      ],
+      "soil_type": null,
+      "treatments": [],
+      "trial_year": null,
+      "contact": null,
+      "notes": "Slide lists \"NCS (Raleigh)\"; confirm"
+    }
+  ],
+  "sites_missing_coords": [
+    {
+      "site_id": "US-FL-02",
+      "name": "Florida site 2",
+      "status": "Tested",
+      "country": "United States",
+      "country_geojson_name": "United States of America",
+      "state": "FL",
+      "county": null,
+      "city": null,
+      "lat": null,
+      "lon": null,
+      "has_coords": false,
+      "coord_source": null,
+      "is_exact": false,
+      "crops": [],
+      "soil_type": null,
+      "treatments": [],
+      "trial_year": 2026,
+      "contact": null,
+      "notes": "Laza table listed FL twice; slide shows only Tallahassee. Confirm"
+    },
+    {
+      "site_id": "US-MI-01",
+      "name": "Michigan site 1",
+      "status": "Future",
+      "country": "United States",
+      "country_geojson_name": "United States of America",
+      "state": "MI",
+      "county": null,
+      "city": null,
+      "lat": null,
+      "lon": null,
+      "has_coords": false,
+      "coord_source": null,
+      "is_exact": false,
+      "crops": [
+        "Soybean"
+      ],
+      "soil_type": null,
+      "treatments": [
+        "Green Ammonia"
+      ],
+      "trial_year": null,
+      "contact": null,
+      "notes": "Slide says MI (2); cities not given yet"
+    },
+    {
+      "site_id": "US-MI-02",
+      "name": "Michigan site 2",
+      "status": "Future",
+      "country": "United States",
+      "country_geojson_name": "United States of America",
+      "state": "MI",
+      "county": null,
+      "city": null,
+      "lat": null,
+      "lon": null,
+      "has_coords": false,
+      "coord_source": null,
+      "is_exact": false,
+      "crops": [
+        "Soybean"
+      ],
+      "soil_type": null,
+      "treatments": [
+        "Green Ammonia"
+      ],
+      "trial_year": null,
+      "contact": null,
+      "notes": "Slide says MI (2); cities not given yet"
+    }
+  ],
+  "counts": {
+    "total": 12,
+    "mappable": 9,
+    "missing_coords": 3,
+    "tested": 6,
+    "future": 6
+  }
+}

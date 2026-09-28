@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crop Trial Locations</title>
+<link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header id="app-header">
+    <div class="header-title">
+      <h1>Crop Trial Locations</h1>
+      <p id="header-subtitle">Loading site data&hellip;</p>
+    </div>
+    <button id="back-to-world" class="hidden">&larr; Back to world view</button>
+  </header>
+
+  <div id="app-body">
+    <div id="map"></div>
+
+    <aside id="side-panel">
+      <section id="legend">
+        <h2>Legend</h2>
+        <div class="legend-row">
+          <span class="legend-icon" id="legend-icon-tested"></span>
+          <span>Tested site <small>(leaf)</small></span>
+        </div>
+        <div class="legend-row">
+          <span class="legend-icon" id="legend-icon-future"></span>
+          <span>Future site <small>(sprout)</small></span>
+        </div>
+        <div class="legend-row">
+          <span class="legend-swatch approx-ring"></span>
+          <span>Approximate location <small>(dashed ring)</small></span>
+        </div>
+        <div class="legend-row">
+          <span class="legend-swatch exact-ring"></span>
+          <span>Exact field GPS <small>(solid ring)</small></span>
+        </div>
+        <div class="legend-row">
+          <span class="legend-swatch country-highlight"></span>
+          <span>Country with trial sites</span>
+        </div>
+      </section>
+
+      <section id="missing-coords-panel">
+        <h2>Not yet mappable</h2>
+        <p class="panel-note">Listed here so nothing is silently missing &mdash; these sites have no coordinates in the workbook yet.</p>
+        <ul id="missing-coords-list"></ul>
+      </section>
+    </aside>
+  </div>
+
+  <script src="vendor/leaflet/leaflet.js"></script>
+  <script src="map.js"></script>
+</body>
+</html>

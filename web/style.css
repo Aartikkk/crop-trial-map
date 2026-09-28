@@ -1,0 +1,267 @@
+:root {
+  --sage: #2C5F2D;
+  --sage-dark: #173D18;
+  --sage-bright: #3E8E41;
+  --sage-tint: #E7EFE4;
+  --accent: #D2780A;
+  --accent-tint: #FBE9D3;
+  --neutral-country: #C7CBC2;
+  --neutral-country-border: #ABB0A4;
+  --ink: #2A2A26;
+  --ink-soft: #5C5C54;
+  --paper: #FFFFFF;
+  --paper-soft: #F7F6F2;
+  --border: #E2E0D8;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  height: 100%;
+  font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+}
+
+#app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 22px;
+  background: linear-gradient(120deg, var(--sage-bright), var(--sage-dark) 130%);
+  color: var(--paper);
+  gap: 16px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.18);
+  position: relative;
+  z-index: 5;
+}
+
+.header-title h1 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+#header-subtitle {
+  margin: 2px 0 0;
+  font-size: 0.85rem;
+  color: #D9E6D6;
+}
+
+#back-to-world {
+  border: 1.5px solid rgba(255,255,255,0.7);
+  background: transparent;
+  color: var(--paper);
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s ease;
+}
+#back-to-world:hover { background: rgba(255,255,255,0.15); }
+#back-to-world.hidden { display: none; }
+
+#app-body {
+  display: flex;
+  height: calc(100% - 58px);
+}
+
+#map {
+  flex: 1 1 auto;
+  height: 100%;
+  background: var(--paper-soft);
+}
+
+#side-panel {
+  width: 280px;
+  flex: 0 0 280px;
+  background: var(--paper-soft);
+  border-left: 1px solid var(--border);
+  padding: 18px 16px;
+  overflow-y: auto;
+}
+
+#side-panel h2 {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--sage-dark);
+  margin: 0 0 10px;
+  font-weight: 700;
+}
+
+#legend { margin-bottom: 26px; }
+
+.legend-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.82rem;
+  margin-bottom: 9px;
+  color: var(--ink-soft);
+}
+.legend-row small { color: #8C8C82; }
+
+.legend-swatch {
+  width: 16px;
+  height: 16px;
+  flex: 0 0 16px;
+  display: inline-block;
+}
+.legend-icon {
+  width: 22px;
+  height: 27px;
+  flex: 0 0 22px;
+  display: inline-block;
+}
+.legend-icon svg { width: 100%; height: 100%; overflow: visible; }
+.legend-swatch.approx-ring,
+.legend-swatch.exact-ring {
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  flex: 0 0 16px;
+  opacity: 0.75;
+}
+.legend-swatch.approx-ring {
+  border: 1.6px dashed var(--ink);
+}
+.legend-swatch.exact-ring {
+  border: 1.6px solid var(--ink);
+}
+.legend-swatch.country-highlight {
+  background: rgba(62,142,65,0.16);
+  border: 2px solid var(--sage-dark);
+  border-radius: 3px;
+}
+
+.panel-note {
+  font-size: 0.76rem;
+  color: var(--ink-soft);
+  margin: 0 0 10px;
+  line-height: 1.4;
+}
+
+#missing-coords-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#missing-coords-list li {
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 4px;
+  padding: 8px 10px;
+  margin-bottom: 8px;
+  font-size: 0.8rem;
+  line-height: 1.35;
+}
+#missing-coords-list li .mc-name {
+  font-weight: 600;
+  color: var(--ink);
+}
+#missing-coords-list li .mc-meta {
+  color: var(--ink-soft);
+  display: block;
+  margin-top: 2px;
+}
+
+/* Leaflet overrides for a cleaner, on-palette look */
+.leaflet-container {
+  background: var(--paper-soft);
+  font-family: inherit;
+}
+.leaflet-control-zoom a {
+  color: var(--sage-dark) !important;
+}
+.leaflet-popup-content-wrapper {
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+.leaflet-popup-tip { background: var(--paper); }
+
+.site-popup h3 {
+  margin: 0 0 6px;
+  font-size: 0.95rem;
+  color: var(--sage-dark);
+}
+.site-popup .status-badge {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 2px 7px;
+  border-radius: 10px;
+  margin-bottom: 6px;
+}
+.site-popup .status-badge.tested {
+  background: var(--sage-tint);
+  color: var(--sage-dark);
+}
+.site-popup .status-badge.future {
+  background: var(--accent-tint);
+  color: var(--accent);
+}
+.site-popup .popup-row {
+  font-size: 0.8rem;
+  margin: 3px 0;
+  color: var(--ink);
+}
+.site-popup .popup-row .label {
+  color: var(--ink-soft);
+  font-weight: 600;
+  margin-right: 4px;
+}
+.site-popup .coord-note {
+  font-size: 0.74rem;
+  color: var(--ink-soft);
+  margin-top: 6px;
+  padding-top: 6px;
+  border-top: 1px dashed var(--border);
+  font-style: italic;
+}
+
+/* basemap: a gentle lift, not a saturation slam */
+.leaflet-tile-pane {
+  filter: saturate(1.1) contrast(1.04);
+}
+
+/* custom divIcon markers -- small point symbols, not pins */
+.trial-marker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0 1px 2px rgba(20,30,20,0.35));
+}
+.trial-marker svg { overflow: visible; }
+
+/* country layer: light tint + a confident outline, so the basemap
+   underneath (state lines, city labels) stays legible instead of
+   disappearing under a solid color block */
+.country-highlighted {
+  fill: var(--sage-bright);
+  fill-opacity: 0.16;
+  stroke: var(--sage-dark);
+  stroke-width: 2.25;
+  cursor: pointer;
+  transition: fill-opacity 0.15s ease;
+}
+.country-highlighted:hover {
+  fill-opacity: 0.32;
+}
+.country-neutral {
+  fill: var(--neutral-country);
+  fill-opacity: 0.4;
+  stroke: var(--neutral-country-border);
+  stroke-width: 0.6;
+}
+
+@media (max-width: 760px) {
+  #app-body { flex-direction: column; }
+  #side-panel { width: 100%; flex: 0 0 auto; max-height: 40%; }
+}
